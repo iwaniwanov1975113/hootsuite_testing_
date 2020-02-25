@@ -1,0 +1,30 @@
+{
+  "name": "aaronsaray/HootSuite-api-php",
+  "description": "A PHP library for rich, testable integration with HootSuite.",
+  "keywords": ["HootSuite", "api"],
+  "homepage": "https://github.com/aaronsaray/HootSuite-api-php",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aaron Saray",
+      "email": "aaron@aaronsaray.com",
+      "homepage": "http://aaronsaray.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "lib-curl": ">=7.0",
+    "symfony/yaml": ">=2.7",
+    "monolog/monolog": ">=1.17"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.5"
+  },
+  "autoload": {
+    "psr-4": {"HootSuite\\": "src/HootSuite"}
+  },
+  "autoload-dev": {
+    "psr-4": {"HootSuite\\tests\\": "tests/HootSuite"}
+  }
+}
